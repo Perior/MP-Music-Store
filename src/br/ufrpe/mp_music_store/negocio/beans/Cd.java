@@ -49,4 +49,24 @@ public class Cd {
 		this.preco = preco;
 	}
 	
+	public String toString(){
+		String texto = "Título: " + this.getTitulo();
+		texto += "\nAno de Lançamento: " + this.getAnoLancamento();
+		texto += "\nArtista: " + this.getArtista();
+		texto += "\nPreço : R$" + this.getPreco();
+		return texto;
+	}
+	
+	public boolean equals(Cd c){
+		boolean r;
+		if(c != null && this.titulo != null && this.anoLancamento != 0){
+			r = (this.titulo.equals(c.getTitulo()) 
+					&& this.anoLancamento == c.getAnoLancamento());
+		}else{
+			r = false;
+		}
+		
+		return r;
+	}
+	
 }
