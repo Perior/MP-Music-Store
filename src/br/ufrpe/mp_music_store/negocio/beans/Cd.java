@@ -49,6 +49,7 @@ public class Cd {
 		this.preco = preco;
 	}
 	
+	//Método toString
 	public String toString(){
 		String texto = "Título: " + this.getTitulo();
 		texto += "\nAno de Lançamento: " + this.getAnoLancamento();
@@ -57,6 +58,7 @@ public class Cd {
 		return texto;
 	}
 	
+	//Método Equals
 	public boolean equals(Cd c){
 		boolean r;
 		if(c != null && this.titulo != null && this.anoLancamento != 0){
